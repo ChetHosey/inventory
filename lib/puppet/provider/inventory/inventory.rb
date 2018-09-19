@@ -17,7 +17,7 @@ Puppet::Type.type(:inventory).provide(:inventory) do
   # Why does this matter?
   #
   # If @property_hash doesn't include the parameters,
-  # they won't be available from within parse_file for new resources,
+  # they won't be available from within format_file for new resources,
   # such as when calling prov.measure. To get the values we'd end up
   # having to conditionally dig into the resource if the provider
   # method returned :absent.
